@@ -4,5 +4,5 @@ jobs:
   ci:
     uses: kitelev/exoas-ci/.github/workflows/assetspace-ci.yml@main
     with:
-      warn_only: true
+      warn_only: false
       resolve_deps: true

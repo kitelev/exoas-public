@@ -7,9 +7,9 @@ exo__Instance_class:
   - "[[8619c4fc-64f1-4869-b17e-e34186cacca9]]"
 exo__Class_superClass:
   - "[[493c2ae2-de56-47ec-954d-2eb8cb49bff7]]"
-exo__Asset_label: ims__ConceptSchema
+exo__Asset_label: concept__ConceptSchema
 aliases:
-  - ims__ConceptSchema
+  - concept__ConceptSchema
   - концепт-схемами
 ---
 

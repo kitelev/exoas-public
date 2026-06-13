@@ -1,0 +1,16 @@
+---
+exo__Asset_isDefinedBy: "[[e0e42c9c-706e-4b27-9cb0-291259e8a6e3|$pmi]]"
+exo__Asset_uid: 75b3bda0-e464-4a2b-b1ad-3bbcad75e5eb
+exo__Asset_createdAt: 2026-06-04T00:55:00+0500
+exo__Asset_updatedAt: 2026-06-04T00:55:00+0500
+exo__Asset_createdBy: "[[de20a3f1-7483-4714-ab28-b45f5cf02c76|ExoAssistant]]"
+exo__Instance_class:
+  - "[[0c793adf-518d-4ad9-898e-352948350ef5|pmi__Model]]"
+exo__Asset_label: pmi__ModelTribalism
+pmi__Model_applicableDomain:
+  - "[[89433d57-4d0a-4c6b-9eba-60b116d88139]]"
+  - "[[9a75286a-5c02-4efa-b11f-9ac7e395bcaa]]"
+pmi__Model_originAuthor: "Logan"
+pmi__Model_originYear: 2008
+exo__Asset_description: "Five tribal cultural stages affecting team."
+---

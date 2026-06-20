@@ -28,7 +28,7 @@
 | `agent` | Agents — `ems__Agent`. | [↓ documented](#agent) |
 | `ref` | References / bibliography — `ref__URLReference`. | [↓ documented](#ref) |
 | `kf` | Knowledge fields — Academic Disciplines, Interdisciplinary Fields. | [↓ documented](#kf) |
-| `ui` | UI vocabulary anchor (layout/column classes ship in the `exo` core AssetSpace). | [↓ documented](#ui) |
+| `ui` | UI vocabulary anchor (layout/column classes live in the `shared-identities` AssetSpace). | [↓ documented](#ui) |
 | `exoql` | ExoQL query vocabulary — `exoql__Query`, `query__NamedQuery`. | [↓ documented](#exoql) |
 | `exotemplate` | Templating vocabulary (`exotemplate__Template`, `body_template` groundings). | [↓ documented](#exotemplate) |
 | `exoob` | Declarative rule classes (`exoob__PrintNameRule`, `exoob__PropertyAliasFactory`). | [↓ documented](#exoob) |
@@ -335,7 +335,7 @@ Knowledge-field vocabulary.
 
 ### ui
 
-The `ui` folder is the namespace **anchor** only. The actual UI vocabulary classes (layouts, relation-column sets) ship in the **`exo` core AssetSpace**, because the layout engine is part of the engine, not a domain. Mount `exoas-exo` for them.
+The `ui` folder here is the namespace **anchor** only. The actual UI vocabulary classes (`exo__Layout`, `ui__ClassLayout`, `ui__GanttView`, …) live in the **`shared-identities`** AssetSpace (a few in `exoas-my`) — mount those if you customise layouts.
 
 ### exoql
 

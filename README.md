@@ -12,40 +12,40 @@
 
 | Namespace | What it is | Docs |
 | --- | --- | --- |
-| **`ems`** | **Effort Management** — Areas, Projects, Tasks, Meetings + a status lifecycle. The Areas → Projects → Tasks model behind most of the Getting-Started walkthrough. | **[↓ documented below](#ems--effort-management-pilot)** |
-| `concept` | Concepts / knowledge atoms (the successor to the legacy `ims` namespace). | stub |
-| `pmi` | Project-management vocabulary (PMI/PMBOK-flavoured). | stub |
-| `period` | Calendar periods — Day, Week, Month, Quarter, Year. | stub |
-| `period-commands` | exocmd command definitions for period & daily notes. | stub |
-| `pn` | Personal / period notes (e.g. `pn__DailyNote`). | stub |
-| `person` | People. | stub |
-| `place` | Places / locations. | stub |
-| `ztlk` | Zettelkasten — permanent & fleeting notes. | stub |
-| `strategy` | Strategy / objectives vocabulary. | stub |
-| `vmost` | VMOST strategic-planning framework (Vision · Mission · Objectives · Strategy · Tactics). | stub |
-| `para` | PARA method (Projects · Areas · Resources · Archives). | stub |
-| `jedi` | "Jedi Techniques" productivity framework. | stub |
-| `role` | Roles. | stub |
-| `profession` | Professions. | stub |
-| `ref` | References / bibliography. | stub |
-| `metric` | Metrics. | stub |
-| `agent` | Agents. | stub |
-| `ui` | UI vocabulary (layouts, columns). | stub |
-| `exoql` | ExoQL query vocabulary. | stub |
-| `exotemplate` | Templating vocabulary (`exotemplate__Template`, `body_template` groundings). | stub |
-| `w3c` | Anchors for standard W3C vocabularies. | stub |
-| `ims` | **Legacy** — original IMS namespace (concepts/notes/people); being re-prefixed to `concept` / `person`. Deprecated, kept for back-references. | stub |
-| `ems-commands` | EMS-specific exocmd command definitions. | stub |
-| `adapter-ems-person`, `adapter-ems-place`, `adapter-exo-ims`, `exo-ims` | Cross-ontology adapter shims that bridge two namespaces. | stub |
-| `tools`, `vault`, `ref`, `kf`, `kpc`, `ts`, `exoob`, `concepts-public` | Additional domain vocabularies. | stub |
+| **`ems`** | **Effort Management** — Areas, Projects, Tasks, Meetings + a status lifecycle. The Areas → Projects → Tasks model behind most of the Getting-Started walkthrough. | **[↓ documented](#ems--effort-management-pilot)** |
+| `concept` | Concepts / knowledge atoms (the successor to the legacy `ims` namespace). | [↓ documented](#concept--knowledge-atoms) |
+| `person` | People — `person__Person` (legacy `ims__Person` is deprecated, being merged in). | [↓ documented](#person--people) |
+| `period` | Calendar periods — Day · Week · Month · Quarter · Halfyear · Year. | [↓ documented](#period--calendar-periods) |
+| `pn` | Periodic notes — DailyNote, WeeklyNote, PeriodicNote. | [↓ documented](#pn--periodic-notes) |
+| `ztlk` | Zettelkasten base note (`ztlk__Note`). Permanent/Fleeting variants live in the `shared-identities` AssetSpace. | [↓ documented](#ztlk--zettelkasten-notes) |
+| `strategy` | Strategy / objectives — Pillars, Initiatives, Strategy. | [↓ documented](#strategy) |
+| `vmost` | VMOST strategic-planning framework (Vision · Mission · Objectives · Strategy · Tactics). | [↓ documented](#vmost) |
+| `para` | PARA method (Projects · Areas · Resources · Archives). | [↓ documented](#para) |
+| `jedi` | "Jedi Techniques" productivity framework. | [↓ documented](#jedi) |
+| `pmi` | PMI/PMBOK study vocabulary (performance domains, principles, models, exam prep). | [↓ documented](#pmi) |
+| `place` | Places / locations — `place__Place`. | [↓ documented](#place) |
+| `role` | Roles — `role__Role`. | [↓ documented](#role) |
+| `agent` | Agents — `ems__Agent`. | [↓ documented](#agent) |
+| `ref` | References / bibliography — `ref__URLReference`. | [↓ documented](#ref) |
+| `kf` | Knowledge fields — Academic Disciplines, Interdisciplinary Fields. | [↓ documented](#kf) |
+| `ui` | UI vocabulary anchor (layout/column classes ship in the `exo` core AssetSpace). | [↓ documented](#ui) |
+| `exoql` | ExoQL query vocabulary — `exoql__Query`, `query__NamedQuery`. | [↓ documented](#exoql) |
+| `exotemplate` | Templating vocabulary (`exotemplate__Template`, `body_template` groundings). | [↓ documented](#exotemplate) |
+| `exoob` | Declarative rule classes (`exoob__PrintNameRule`, `exoob__PropertyAliasFactory`). | [↓ documented](#exoob) |
+| `tools` | Dashboard / utility vocabulary — `tools__DashboardUtil`. | [↓ documented](#tools) |
+| `vault` | Vault structure — `vault__Vault`, `vault__Folder`. | [↓ documented](#vault) |
+| `ts` | Metric / KPI tracking vocabulary — `ts__Metric`. | [↓ documented](#ts) |
+| `w3c`, `ims`, `metric`, `kpc`, `concepts-public`, `exo-ims` | Anchors, the deprecated legacy `ims` namespace, and reserved/placeholder vocabularies. | [↓ documented](#other-namespaces) |
+| `ems-commands`, `period-commands` | Homoiconic exocmd command definitions (status buttons, daily-note commands) — not classes. | [↓ documented](#other-namespaces) |
+| `adapter-ems-person`, `adapter-ems-place`, `adapter-exo-ims` | Cross-ontology adapter shims that bridge two namespaces. | [↓ documented](#other-namespaces) |
 
-> **"stub" = documentation pending.** Each namespace section will be expanded over time, following the **EMS section below as the template**. The classes themselves are live and usable today regardless of doc status — this README is reference prose, not a gate.
+> The classes themselves are live and usable today regardless of doc depth — this README is reference prose, not a gate. Each section below is built from the classes that **actually exist on disk** in this repo.
 
 ---
 
 ## EMS — Effort Management (pilot)
 
-> This is the **fully-written reference section**; the other namespaces above will follow this shape. EMS is the domain behind the Areas → Projects → Tasks walkthrough in the engine's [Getting Started guide](https://github.com/kitelev/exocortex/blob/main/docs/tutorials/Getting-Started.md) — that guide teaches the *mechanism*; this section is the *domain model*.
+> This is the **fully-written reference section**; the other namespaces follow this shape. EMS is the domain behind the Areas → Projects → Tasks walkthrough in the engine's [Getting Started guide](https://github.com/kitelev/exocortex/blob/main/docs/tutorials/Getting-Started.md) — that guide teaches the *mechanism*; this section is the *domain model*.
 
 EMS models **work** as a hierarchy of **Efforts** with a tracked **status lifecycle**.
 
@@ -110,6 +110,290 @@ ems__Effort_status: "[[ems__EffortStatusToDo]]"
 ```
 
 In a vault that has this AssetSpace mounted, the plugin renders this note's layout (properties, status/creation/planning buttons, related-asset tables) in Reading Mode. The recommended way to create efforts is the in-layout **Create Project / Create Task** buttons, which write the correct frontmatter (canonical UID-form class refs) for you.
+
+---
+
+## concept — knowledge atoms
+
+`concept` is the **knowledge-modelling** namespace — the successor to the legacy `ims` namespace. A `concept__Concept` is an atom of meaning (an idea, term, or entity) that you connect into a graph and reference from notes, tasks, and definitions.
+
+### Core classes
+
+| Class | Role |
+| --- | --- |
+| `concept__Concept` | The base knowledge atom. |
+| `concept__CharacterizedConcept` | A concept carrying structured characteristics. |
+| `concept__ConceptSchema` | A scheme that groups related terms (a SKOS-style concept scheme). |
+| `concept__Term` | A lexical term within a scheme. |
+| `concept__Definition` | A definition that *defines* a concept. |
+| `concept__ConceptDescription` | A longer descriptive record attached to a concept. |
+| `concept__Context` | A context in which a concept holds. |
+| `concept__ConceptFunction` | A function mapping concept inputs to outputs. |
+| `concept__System` | A system of related concepts. |
+| `concept__Equality` / `concept__Reciproxity` | Reified relationship classes (equality, reciprocity). |
+| `concept__Adjective` / `concept__Movie` / `concept__Video` / `concept__Series` | Typed concept refinements (a movie, a video, a series, an adjective). |
+| `concept__ConceptPrototype` | Prototype used to spawn new concepts with defaults. |
+
+### Key properties
+
+| Property | Purpose |
+| --- | --- |
+| `concept__Concept_broader` | Links a concept to a broader (parent) concept — SKOS-style taxonomy. |
+| `concept__Concept_related` | Associates two concepts non-hierarchically. |
+| `concept__Concept_definition` | Links a concept to its `concept__Definition`. |
+| `concept__Concept_schema` | Places a concept into a `concept__ConceptSchema`. |
+| `concept__Term_lexicalForm` | The written form of a term. |
+
+### Minimal example
+
+```yaml
+---
+exo__Instance_class:
+  - "[[concept__Concept]]"
+exo__Asset_label: Spaced repetition
+concept__Concept_broader: "[[Memory techniques]]"
+---
+```
+
+---
+
+## person — people
+
+`person` models **people**. `person__Person` is the canonical class; `ims__Person` is the deprecated legacy class (marked `exo__DeprecatedClass`), kept while existing data is re-prefixed.
+
+### Core classes
+
+| Class | Role |
+| --- | --- |
+| `person__Person` | A person (canonical). |
+| `ims__Person` | **Deprecated** legacy person class — being merged into `person__Person`. |
+| `ims__Person_knows` | Reified "knows" relationship between two people. |
+
+### Key properties
+
+| Property | Purpose |
+| --- | --- |
+| `ims__Person_birthDayOfMonth` | The person's birthday (links to a `period__DayOfMonth`). |
+
+### Minimal example
+
+```yaml
+---
+exo__Instance_class:
+  - "[[person__Person]]"
+exo__Asset_label: Ada Lovelace
+---
+```
+
+---
+
+## period — calendar periods
+
+`period` models **time**. Periods nest into a tree (a Day belongs to a Month, a Month to a Quarter, …) via `period__Period_parent`, so you can roll efforts and notes up to any granularity.
+
+### Core classes
+
+| Class | Role |
+| --- | --- |
+| `period__Period` | The shared base class for all calendar periods. |
+| `period__Day` | A calendar day. |
+| `period__Week` | A calendar week. |
+| `period__Month` | A calendar month. |
+| `period__Quarter` | A calendar quarter. |
+| `period__Halfyear` | A half-year. |
+| `period__Year` | A calendar year. |
+| `period__DayOfMonth` | A day-of-month abstraction (e.g. for recurring birthdays). |
+
+### Key properties
+
+| Property | Purpose |
+| --- | --- |
+| `period__Period_parent` | Links a period to its enclosing period (Day → Month → Quarter → Year). |
+| `period__Month_year` / `period__Quarter_year` / `period__Halfyear_year` | Link a sub-period to its year. |
+| `period__DayOfMonth_day` / `period__DayOfMonth_month` | Decompose a day-of-month. |
+
+---
+
+## pn — periodic notes
+
+`pn` provides the note classes that the calendar/periodic-note workflow uses. They pair with the `period` classes and the `period-commands` command definitions.
+
+### Core classes
+
+| Class | Role |
+| --- | --- |
+| `pn__PeriodicNote` | The base class for any periodic note. |
+| `pn__DailyNote` | A daily note (`YYYY-MM-DD`), linked to a `period__Day`. |
+| `pn__WeeklyNote` | A weekly note (`YYYY-Www`), linked to a `period__Week`. |
+
+### Key properties
+
+| Property | Purpose |
+| --- | --- |
+| `pn__DailyNote_day` | Links a daily note to its `period__Day`. |
+| `pn__WeeklyNote_week` | Links a weekly note to its `period__Week`. |
+| `pn__PeriodicNote_period` | Links any periodic note to its `period__Period`. |
+
+> Daily/Weekly note files are the two label-named exceptions to UID-canon (`YYYY-MM-DD.md` / `YYYY-Www.md`) so the Obsidian calendar plugin can recognise them by basename.
+
+---
+
+## ztlk — zettelkasten notes
+
+`ztlk` carries the base Zettelkasten note class.
+
+| Class | Role |
+| --- | --- |
+| `ztlk__Note` | The base Zettelkasten note. |
+
+> The richer **Permanent** and **Fleeting** note variants (`ztlk__PermanentNote`, `ztlk__FleetingNote`) live in the **`shared-identities`** AssetSpace, not here — mount that AssetSpace if you use the full Zettelkasten workflow.
+
+---
+
+## Strategy and planning frameworks
+
+These namespaces model goal-setting and strategic-planning vocabularies. They are small, self-contained class sets you can adopt independently.
+
+### strategy
+
+| Class | Role |
+| --- | --- |
+| `strategy__Strategy` | A strategy — the top container. |
+| `strategy__Pillar` | A strategic pillar (a theme the strategy is organised around). |
+| `strategy__Initiative` | An initiative that advances a pillar. |
+
+### vmost
+
+The VMOST strategic-planning framework, top-down:
+
+| Class | Role |
+| --- | --- |
+| `vmost__Vision` | The long-term vision. |
+| `vmost__Mission` | The mission serving the vision. |
+| `vmost__Objective` | A measurable objective. |
+| `vmost__Strategy` | A strategy to reach objectives. |
+| `vmost__Tactics` | Concrete tactics implementing a strategy. |
+
+### para
+
+The PARA method (Projects · Areas · Resources · Archives). This namespace ships the `para__Resource` class; Projects and Areas reuse the `ems` namespace.
+
+### jedi
+
+The "Jedi Techniques" productivity framework namespace (anchor + framework individuals such as task-criticality zones). It supplies enum-style individuals consumed by EMS layouts rather than new classes.
+
+---
+
+## Reference and utility vocabularies
+
+Smaller domain and utility vocabularies. Each is a single-purpose class set.
+
+### pmi
+
+PMI/PMBOK **study** vocabulary — built for project-management exam preparation.
+
+| Class | Role |
+| --- | --- |
+| `pmi__PerformanceDomain` | A PMBOK performance domain. |
+| `pmi__Principle` | A project-management principle. |
+| `pmi__Model` / `pmi__Method` / `pmi__Artifact` | Models, methods, and artifacts from the PMBOK Guide. |
+| `pmi__StudyPlan` | A study plan. |
+| `pmi__ExamQuestion` | A practice exam question. |
+
+### place
+
+| Class | Role |
+| --- | --- |
+| `place__Place` | A place / location. |
+
+### role
+
+| Class | Role |
+| --- | --- |
+| `role__Role` | A role (e.g. a position a person holds). |
+
+### agent
+
+| Class | Role |
+| --- | --- |
+| `ems__Agent` | An agent (human or automated actor). |
+
+### ref
+
+| Class | Role |
+| --- | --- |
+| `ref__URLReference` | A URL-based reference / bibliography entry. |
+
+### kf
+
+Knowledge-field vocabulary.
+
+| Class | Role |
+| --- | --- |
+| `kf__Academic Discipline` | An academic discipline. |
+| `kf__InterdisciplinaryField` | An interdisciplinary field. |
+
+### ui
+
+The `ui` folder is the namespace **anchor** only. The actual UI vocabulary classes (layouts, relation-column sets) ship in the **`exo` core AssetSpace**, because the layout engine is part of the engine, not a domain. Mount `exoas-exo` for them.
+
+### exoql
+
+ExoQL query vocabulary — lets you store named queries as assets.
+
+| Class | Role |
+| --- | --- |
+| `exoql__Query` | A stored ExoQL query. |
+| `query__NamedQuery` | A named, reusable query. |
+
+### exotemplate
+
+| Class | Role |
+| --- | --- |
+| `exotemplate__Template` | A body template used by `body_template` groundings to scaffold note bodies on creation. |
+
+### exoob
+
+Declarative rule classes that configure engine display/alias behaviour from data (homoiconic).
+
+| Class | Role |
+| --- | --- |
+| `exoob__PrintNameRule` | A rule for how an asset's name is printed. |
+| `exoob__PropertyAliasFactory` | A factory for property aliases. |
+
+### tools
+
+| Class | Role |
+| --- | --- |
+| `tools__DashboardUtil` | A dashboard / utility helper. |
+
+### vault
+
+| Class | Role |
+| --- | --- |
+| `vault__Vault` | A vault. |
+| `vault__Folder` | A folder within a vault. |
+
+### ts
+
+Metric / KPI tracking vocabulary.
+
+| Class | Role |
+| --- | --- |
+| `ts__Metric` | A tracked metric or KPI. |
+| `ts__Metric_influences` | Relationship: one metric influences another. |
+
+---
+
+## Other namespaces
+
+These namespaces hold no domain classes of their own — they are anchors, command definitions, adapters, or the deprecated legacy namespace:
+
+- **`w3c`** — anchors for standard W3C vocabularies (see also the `exoas-w3c-aggregated` AssetSpace).
+- **`ims`** — the **deprecated legacy** namespace (concepts/notes/people). Being re-prefixed to `concept` / `person`; kept for back-references.
+- **`ems-commands`**, **`period-commands`** — homoiconic **exocmd command** definitions (the status buttons and daily-note commands), not classes.
+- **`adapter-ems-person`**, **`adapter-ems-place`**, **`adapter-exo-ims`**, **`exo-ims`** — cross-ontology **adapter shims** that bridge two namespaces.
+- **`metric`**, **`kpc`**, **`concepts-public`** — reserved / placeholder namespace anchors.
 
 ---
 

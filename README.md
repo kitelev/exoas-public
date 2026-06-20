@@ -35,7 +35,7 @@
 | `tools` | Dashboard / utility vocabulary — `tools__DashboardUtil`. | [↓ documented](#tools) |
 | `vault` | Vault structure — `vault__Vault`, `vault__Folder`. | [↓ documented](#vault) |
 | `ts` | Metric / KPI tracking vocabulary — `ts__Metric`. | [↓ documented](#ts) |
-| `w3c`, `ims`, `metric`, `kpc`, `concepts-public`, `exo-ims` | Anchors, the deprecated legacy `ims` namespace, and reserved/placeholder vocabularies. | [↓ documented](#other-namespaces) |
+| `w3c`, `ims`, `profession`, `metric`, `kpc`, `concepts-public`, `exo-ims` | Anchors, the deprecated legacy `ims` namespace, and reserved/placeholder vocabularies. | [↓ documented](#other-namespaces) |
 | `ems-commands`, `period-commands` | Homoiconic exocmd command definitions (status buttons, daily-note commands) — not classes. | [↓ documented](#other-namespaces) |
 | `adapter-ems-person`, `adapter-ems-place`, `adapter-exo-ims` | Cross-ontology adapter shims that bridge two namespaces. | [↓ documented](#other-namespaces) |
 
@@ -381,18 +381,20 @@ Metric / KPI tracking vocabulary.
 | Class | Role |
 | --- | --- |
 | `ts__Metric` | A tracked metric or KPI. |
-| `ts__Metric_influences` | Relationship: one metric influences another. |
+
+Plus the `ts__Metric_influences` object-property (relationship: one metric influences another).
 
 ---
 
 ## Other namespaces
 
-These namespaces hold no domain classes of their own — they are anchors, command definitions, adapters, or the deprecated legacy namespace:
+These namespaces hold (essentially) no domain classes of their own — they are anchors, command definitions, adapters, or the deprecated legacy namespace:
 
 - **`w3c`** — anchors for standard W3C vocabularies (see also the `exoas-w3c-aggregated` AssetSpace).
-- **`ims`** — the **deprecated legacy** namespace (concepts/notes/people). Being re-prefixed to `concept` / `person`; kept for back-references.
+- **`ims`** — the **deprecated legacy** namespace (concepts/notes/people). Being re-prefixed to `concept` / `person`; kept for back-references. (Holds no `ims__` domain classes; one stray legacy `inbox__Quote` artifact remains.)
 - **`ems-commands`**, **`period-commands`** — homoiconic **exocmd command** definitions (the status buttons and daily-note commands), not classes.
 - **`adapter-ems-person`**, **`adapter-ems-place`**, **`adapter-exo-ims`**, **`exo-ims`** — cross-ontology **adapter shims** that bridge two namespaces.
+- **`profession`** — profession anchor + individuals (e.g. `QA`); no classes.
 - **`metric`**, **`kpc`**, **`concepts-public`** — reserved / placeholder namespace anchors.
 
 ---

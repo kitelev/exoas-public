@@ -9,7 +9,7 @@ exo__Instance_class:
 exo__Asset_label: "$kpc"
 aliases:
   - "$kpc"
-exo__Ontology_url: https://exocortex.my/ontology/kpc
+exo__Ontology_url: https://exocortex.my/ontology/kpc#
 exo__Ontology_imports:
   - "[[ca97bb2f-99bd-4ceb-b51e-c386b9231ae3|$exo]]"
   - "[[d1195402-73a5-45ed-965f-3a435a553e6a|$shared-identities]]"

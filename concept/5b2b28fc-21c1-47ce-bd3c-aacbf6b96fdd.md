@@ -6,7 +6,8 @@ exo__Instance_class:
   - "[[30d63ce4-e574-456c-8de8-2bf1a53688c1]]"
   - "[[8f07659c-419a-4489-aa7a-e0dbcc8466ea]]"
 exo__Property_domain: "[[14cbc15d-bd94-4146-864e-e17273226c34]]"
-exo__Asset_label: concept__Definition_text
+exo__Asset_label: concept__Definition_text (DEPRECATED)
 aliases:
-  - concept__Definition_text
+  - "concept__Definition_text (DEPRECATED)"
+exo__Asset_updatedAt: 2026-07-25T22:50:31
 ---

@@ -2,7 +2,7 @@
 exo__Asset_isDefinedBy: "[[be2c3f06-48db-4a38-a21d-a81ce1836815]]"
 exo__Asset_uid: a6ef8fda-addb-40c3-940c-fe55fd7e8500
 exo__Asset_createdAt: 2026-05-02T09:19:00
-exo__Asset_updatedAt: 2026-06-28T17:00:00
+exo__Asset_updatedAt: 2026-07-28T00:11:29
 exo__Instance_class:
   - "[[11579feb-2e42-491c-af59-b89b1129a539]]"
 exo__Asset_label: Create TaskPrototype instance
@@ -17,6 +17,7 @@ exocmd__Grounding_inheritanceRule:
   - "[[cbe000c4-b29a-4405-876d-790fb2296121]]"
 exocmd__Grounding_propertyDefault:
   - "[[d9aa9bb8-5676-4ba2-ba5e-fc8d9df02250]]"
+  - "[[2299d503-8cb3-40f1-b56d-95abdc6d9f87]]"
 exocmd__Grounding_prefillLabelWithDate: true
 exocmd__Grounding_labelTemplate: $target.exo__Asset_label $today
 ---

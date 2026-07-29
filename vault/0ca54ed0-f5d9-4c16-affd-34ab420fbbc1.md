@@ -8,6 +8,7 @@ exo__Class_description: Папка хранилища
 exo__Class_superClass:
   - "[[493c2ae2-de56-47ec-954d-2eb8cb49bff7]]"
 exo__Asset_label: vault__Folder
+exo__Slugable_slug: "Folder"
 aliases:
   - vault__Folder
 ---

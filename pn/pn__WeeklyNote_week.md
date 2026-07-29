@@ -9,6 +9,7 @@ exo__Property_domain: "[[31551602-0e46-44d0-ae80-6fd01e18c41d]]"
 exo__Property_range: "[[2b754a16-cccf-49ee-af69-a18c6d1e3b63|period__Week]]"
 exo__Property_displayName: week
 exo__Asset_label: pn__WeeklyNote_week
+exo__Slugable_slug: "WeeklyNote_week"
 aliases:
   - pn__WeeklyNote_week
 ---

@@ -10,6 +10,7 @@ exo__Class_superClass:
   - "[[ebf717aa-4070-4b37-abde-10a700e354fc]]"
 exo__Class_description: Прототип встречи
 exo__Asset_label: ems__MeetingPrototype
+exo__Slugable_slug: "MeetingPrototype"
 aliases:
   - ems__MeetingPrototype
 ---

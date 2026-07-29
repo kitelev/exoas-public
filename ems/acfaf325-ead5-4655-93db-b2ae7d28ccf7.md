@@ -8,6 +8,7 @@ exo__Instance_class:
 exo__Property_domain: "[[086f71fa-dd30-4284-90cf-e609f2a6c461]]"
 exo__Property_range: "[[086f71fa-dd30-4284-90cf-e609f2a6c461]]"
 exo__Asset_label: ems__Effort_blockedBy
+exo__Slugable_slug: "Effort_blockedBy"
 aliases:
   - ems__Effort_blockedBy
 ---

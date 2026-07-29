@@ -7,6 +7,7 @@ exo__Instance_class:
 exo__Class_superClass:
   - "[[68ea8b63-465a-41f0-9f2c-a93eac313b47]]"
 exo__Asset_label: ems__SessionStartEvent
+exo__Slugable_slug: "SessionStartEvent"
 aliases:
   - ems__SessionStartEvent
 ---

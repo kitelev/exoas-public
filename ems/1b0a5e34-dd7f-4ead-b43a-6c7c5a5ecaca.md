@@ -7,6 +7,7 @@ exo__Instance_class:
 exo__Class_superClass:
   - "[[1b20a8f0-d745-4e93-91db-4531b3df120e]]"
 exo__Asset_label: ems__Meeting
+exo__Slugable_slug: "Meeting"
 aliases:
   - ems__Meeting
 ---

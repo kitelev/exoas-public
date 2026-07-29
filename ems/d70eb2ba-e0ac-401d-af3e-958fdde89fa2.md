@@ -7,6 +7,7 @@ exo__Instance_class:
 exo__Property_domain: "[[1b20a8f0-d745-4e93-91db-4531b3df120e]]"
 exo__Property_range: "[[4745ce55-5f1e-4a66-90ae-edf66250be02]]"
 exo__Asset_label: ems__Task_size
+exo__Slugable_slug: "Task_size"
 aliases:
   - ems__Task_size
 ---

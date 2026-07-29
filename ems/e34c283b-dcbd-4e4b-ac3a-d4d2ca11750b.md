@@ -8,6 +8,7 @@ exo__Property_domain: "[[086f71fa-dd30-4284-90cf-e609f2a6c461]]"
 exo__Property_range: "[[90f77d9e-27f9-48f2-ad1a-8490d99eb088]]"
 exo__Property_cardinality: "[[089d1898-a61f-4ba4-b20f-a1b329be5e74]]"
 exo__Asset_label: ems__Effort_trashedReason
+exo__Slugable_slug: "Effort_trashedReason"
 exo__Property_displayName: trashedReason
 ---
 

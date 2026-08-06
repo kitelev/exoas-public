@@ -11,4 +11,6 @@ exo__Asset_label: ems__Effort_blockedBy
 exo__Slugable_slug: "Effort_blockedBy"
 aliases:
   - ems__Effort_blockedBy
+exo__Property_description: "Overlay-ребро PDD: у эффорта есть НЕЗАКРЫТЫЙ ДОЛГ (пазл), им же порождённый. Пишется ~/.claude/lib/pdd-harvest.py при харвесте пазлов. ⛔ НЕ означает, что эффорт заблокирован, и НЕ читается фильтром готовности петли — для зависимости исполнения см. ems__Effort_blocker. Значение вида «Done-проект указывает на свои пазлы» — норма, а не ошибка данных."
+exo__Asset_updatedAt: 2026-08-06T14:04:18
 ---

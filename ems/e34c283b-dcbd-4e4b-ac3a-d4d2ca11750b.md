@@ -6,10 +6,11 @@ exo__Instance_class:
   - "[[9a1cf31c-9d41-4ef3-9023-584a8d087d16]]"
 exo__Property_domain: "[[086f71fa-dd30-4284-90cf-e609f2a6c461]]"
 exo__Property_range: "[[90f77d9e-27f9-48f2-ad1a-8490d99eb088]]"
-exo__Property_cardinality: "[[089d1898-a61f-4ba4-b20f-a1b329be5e74]]"
+exo__Property_cardinality: "[[c93c4b2f-b43d-4cc9-8dd0-31514d608da2]]"
 exo__Asset_label: ems__Effort_trashedReason
 exo__Slugable_slug: "Effort_trashedReason"
 exo__Property_displayName: trashedReason
+exo__Asset_updatedAt: 2026-09-11T22:38:03
 ---
 
 # ems__Effort_trashedReason

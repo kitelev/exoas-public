@@ -12,7 +12,8 @@ exocmd__Command_successMessage: "Criticality zone set to This Week"
 exocmd__Command_category: "criticality"
 exocmd__Command_cliName: set-criticality-medium
 exocmd__Command_destructive: true
-exo__Asset_updatedAt: "2026-05-16T18:41:57+0500"
+exo__Asset_updatedAt: 2026-10-14T12:11:25
+exo__Asset_deprecatedBy: "[[9b598192-8ed3-47c4-95bb-9d2f984a24b8]]"
 ---
 
 # Set Criticality Medium

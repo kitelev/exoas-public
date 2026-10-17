@@ -9,4 +9,5 @@ exo__Property_domain: "[[086f71fa-dd30-4284-90cf-e609f2a6c461]]"
 exo__Asset_label: ems__Effort_dueDate
 aliases:
   - ems__Effort_dueDate
+exo__Property_displayName: dueDate
 ---

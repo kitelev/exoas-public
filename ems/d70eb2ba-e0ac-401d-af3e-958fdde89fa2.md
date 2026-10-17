@@ -10,4 +10,5 @@ exo__Asset_label: ems__Task_size
 exo__Slugable_slug: "Task_size"
 aliases:
   - ems__Task_size
+exo__Property_displayName: size
 ---

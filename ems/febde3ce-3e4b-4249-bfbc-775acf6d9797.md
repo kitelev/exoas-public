@@ -11,6 +11,7 @@ aliases:
 exo__Asset_isDefinedBy: "[[f6e01f7a-d727-494a-82a3-815597d33e86]]"
 exo__Property_domain: "[[35cda27f-661c-4d8e-bace-4430d78308b6]]"
 exo__Property_range: "[[1ba807ee-c235-4e1e-aa98-1ee301f60163]]"
+exo__Property_displayName: participants
 ---
 
 # ems__SocialGatheringSession_participants

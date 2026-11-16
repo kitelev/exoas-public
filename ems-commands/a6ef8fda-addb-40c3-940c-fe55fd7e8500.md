@@ -18,6 +18,7 @@ exocmd__Grounding_inheritanceRule:
 exocmd__Grounding_propertyDefault:
   - "[[d9aa9bb8-5676-4ba2-ba5e-fc8d9df02250]]"
   - "[[2299d503-8cb3-40f1-b56d-95abdc6d9f87]]"
+  - "[[25537867-46c5-4abb-8d02-08bc87687c00]]"
 exocmd__Grounding_prefillLabelWithDate: true
 exocmd__Grounding_labelTemplate: $target.exo__Asset_label $today
 ---
